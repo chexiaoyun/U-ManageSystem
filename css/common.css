@@ -1,0 +1,107 @@
+@font-face { 
+  font-family: SourceHanSansCN-Regular;       /*这里是说明调用来的字体名字*/ 
+  src: url('../font/SourceHanSansCN-Regular.otf');   /*这里是字体文件路径*/ 
+}
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+	font-family: "SourceHanSansCN-Regular";
+	font-weight: normal;
+}
+body{
+	background: #fff;
+	width:100%;
+	min-width:1200px;
+	height:auto;
+}
+body#u-login{
+	min-width: 1200px;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+i,em{
+	font-style: normal;
+}
+strong{
+	font-weight: normal;
+}
+input,button,select{
+	border:none;
+	outline: none;
+	background: none;
+}
+::-webkit-input-placeholder {  
+    color:#ccc;  
+}  
+:-moz-placeholder {  
+    color:#ccc;  
+}  
+::-moz-placeholder {  
+    color:#ccc; 
+}  
+:-ms-input-placeholder {   
+	color:#ccc;  
+}  
+textarea{
+	border:none;
+	resize: none;
+	outline: none;
+}
+.u-font{
+	color:#0183e1;
+}
+.u-bgcolor{
+	background: #0183E1;
+}
+.u-body{
+	background: #f4f5f9;
+}
+/*头部*/
+#u-header{
+	width:100%;
+	min-width: 1200px;
+	height:60px;
+}
+.u-header-wrap{
+	width:1200px;
+	height:60px;
+	margin:0 auto;
+	align-items: center;
+	line-height: 60px;
+}
+.u-header-wrap h1{
+	font-size:20px;
+	float: left;
+}
+.u-header-wrap span{
+	color:#818181;
+	font-size:16px;
+	float: left;
+}
+.u-header-wrap i{
+	width:2px;
+	height:24px;
+	margin:0 14px;
+	color:#cecece;
+	float: left;
+}
+#u-middle{
+	width:100%;
+	min-width: 1200px;
+	height:auto;
+	overflow: hidden;
+}
+/*底部*/
+#u-footer{
+	width:100%;
+	min-width: 1200px;
+	margin-top:30px;
+	color:#94939d;
+	font-size:12px;
+	text-align: center;
+}

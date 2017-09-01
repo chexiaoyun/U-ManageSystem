@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>企业信息</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/purchaser.css" />
+	</head>
+	<body>
+		<div id="u-header">
+			<div class="u-header-wrap">
+				<h1 class="u-font">U智采购管理系统</h1>
+				<i>|</i>
+				<span>采购商</span>
+				<strong>你好，管理员！退出</strong>
+			</div>
+		</div>
+		<div id="u-middle">
+			<div class="u-tip">
+				<i></i>
+				<ul>
+					<li><span>沪铅现价：</span><span>19555</span><strong>+1.65%</strong></li>
+					<li><span>沪铅现货09：</span><span>19010</span><strong>1.03%</strong></li>
+					<li><span>沪铅现货09：</span><span>19010</span><strong>1.03%</strong></li>
+				</ul>
+			</div>
+			<div class="u-enterInfo">
+				<div class="u-enterInfo-left">
+					<div class="u-left-wrap">
+						<dl>
+							<dt class="u-account"><i></i><span>账户信息</span></dt>
+							<dd class="u-first">企业信息</dd>
+							<dd>用户信息</dd>
+							<dd>生产信息</dd>
+						</dl>
+						<dl>
+							<dt class="u-shop"><i></i><span>采购中心</span></dt>
+							<dd  class="u-first">采购商店</dd>
+							<dd>采购订单</dd>
+						</dl>
+						<dl>
+							<dt class="u-money"><i></i><span>资金管理</span></dt>
+							<dd>资金管理</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="u-enterInfo-right">
+					<div class="u-right-wrap">
+						<h1>账户信息</h1>
+						<ul class="u-right-modle">
+							<li class="u-active u-enter">
+								<a href="javascript:;">
+									<i></i>
+									<div class="u-modle-first">
+										<h2>企业信息</h2>
+										<span>请完善企业基本信息</span>
+									</div>
+								</a>
+							</li>
+							<li class="u-user">
+								<a href="account-info.html">
+									<i></i>
+									<div class="u-modle-first">
+										<h2>用户信息</h2>
+										<span>填写个人信息情况</span>
+									</div>
+								</a>
+							</li>
+							<li class="u-produce">
+								<a href="produce-info.html">
+									<i></i>
+									<div class="u-modle-first">
+										<h2>生产信息</h2>
+										<span>选填生产业务基本信息</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<form action="">
+							<div class="u-common u-basicInfo ">
+								<h2>基本信息</h2>
+								<ul class="u-infolist">
+									<li>
+										<span>企业名称：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>统一信用代码：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>地址：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>电话：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>上传营业执照：</span>
+										<div class="u-infobox">
+											<span id="btn">点击上传</span>
+											<input type="file" id="fileElem" multiple accept="image/*" name="myImage" onchange="handleFiles()" style="display:none;">
+										</div>
+									</li>
+									<li id="u-album"></li>
+								</ul>
+							</div>
+							<div class="u-common u-finance">
+								<h2>财务信息</h2>
+								<ul class="u-infolist">
+									<li>
+										<span>开户名：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>开户银行：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>账号：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="u-common u-finance">
+								<h2>发票信息</h2>
+								<ul class="u-infolist">
+									<li>
+										<span>抬头：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>纳税人识别号：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>地址：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>电话：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>开户行：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>账号：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="u-common u-finance">
+								<h2>物流信息</h2>
+								<ul class="u-infolist">
+									<li>
+										<span>收货人：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>手机（电话）：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>地址：</span>
+										<div class="u-select">
+											<select name="" id="selProvince">
+												<option value="">省</option>
+											</select>
+											<select name="" id="selCity">
+												<option value="">市</option>
+											</select>
+											<select name="" id="selDistrict">
+												<option value="">区</option>
+											</select>
+											<div class="u-infoinput">
+												<input type="text" value="" placeholder="详细地址" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<span>邮编：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="u-finish">
+								<input type="submit" value="确认" class='u-sure' />
+								<input type="submit" value="修改" class='u-modify' />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="u-footer">
+			上海翰而精投资管理有限公司 © 版权所有 沪ICP备12008717号
+		</div>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/china_area.js"></script>
+		<script>
+			//上传图片
+			$('#btn').click(function(){
+				$(this).next('input').click();
+			});
+			function handleFiles(){
+				//var oMyForm = new FormData();
+        		//oMyForm.append("image", $("#fileElem").get(0).files[0]);
+				var div = $('<div class="img-wrap"></div>');
+				var img = $('<img class="img" src="" />');
+				img.attr('src','../img/dimg1.png');
+				var span = $('<span class="u-bgcolor" onclick="remove()">删除</span>')
+				$('#u-album').append(div);
+				div.append(span);
+				div.append(img);
+			};
+			//	三级联动
+			$(function() {
+			    $.each(provinceJson, function(k, p) {
+			        var option = "<option value='" + p.id + "'>" + p.province + "</option>";
+			        $("#selProvince").append(option);
+			    });
+			    $("#selProvince").change(function() {
+			        var selValue = $(this).val();
+			        $("#selCity option:gt(0)").remove();
+			        $.each(cityJson, function(k, p) {
+			            // 直辖市处理.|| p.parent == selValue，直辖市为当前自己
+			            if (p.id == selValue || p.parent == selValue) {
+			                var option = "<option value='" + p.id + "'>" + p.city + "</option>";
+			                $("#selCity").append(option);
+			            }
+			        });
+			    });
+			    $("#selCity").change(function() {
+			        var selValue = $(this).val();
+			        $("#selDistrict option:gt(0)").remove();
+			        $.each(countyJson, function(k, p) {
+			            if (p.parent == selValue) {
+			                var option = "<option value='" + p.id + "'>" + p.county + "</option>";
+			                $("#selDistrict").append(option);
+			            }
+			        });
+			    });
+			});
+		</script>
+	</body>
+</html>

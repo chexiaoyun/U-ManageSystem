@@ -1,0 +1,231 @@
+.u-middle-login{
+	width:1000px;
+	height:600px;
+	background: url(../img/lBig.png) no-repeat;
+	margin:0 auto;
+}
+.u-middle-message{
+	width:308px;
+	height:370px;
+	background: #fff;
+	margin-right:15px;
+	float:right;
+	margin-top:117px;
+}
+#u-form{
+	padding:0 18px;
+	width:auto;
+	height:auto;
+	overflow: hidden;
+}
+.u-form-title{
+	width:100%;
+	height:48px;
+	border-bottom:2px solid #b4b4b4;
+	flex-direction: row;
+	align-items: center;
+	line-height: 48px;
+}
+.u-form-title h1{
+	color:#0175e2;
+	font-size:18px;
+	float: left;
+}
+.u-form-title a{
+	color:#666;
+	font-size:12px;
+	float:right;
+	justify-content: center;
+}
+.u-form-title a i{
+	margin-left:5px;
+	display: inline-block;
+	float: right;
+	margin-top:18px;
+}
+.u-form-title a.u-psw i{
+	background: url(../img/img.png) 0 0;
+	width:13px;
+	height:13px;
+}
+.u-form-title a.u-msg i{
+	background: url(../img/img.png) -119px 0;
+	width:11px;
+	height:15px;
+}
+.u-form-list{
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	margin-top:5px;
+}
+.u-form-input{
+	margin-top:25px;
+	border:1px solid #c0c0c0;
+	width:100%;
+	height:42px;
+	box-sizing: border-box;
+}
+.u-form-input i{
+	margin:10px;
+	float:left;
+}
+.u-form-input input{
+	float:left;
+	height:40px;
+	width:80%;
+}
+.u-form-phone i{
+	background: url(../img/img.png)  -94px 0;
+	width:13px;
+	height:18px;
+}
+.u-form-phone input{
+	width:85%;
+}
+.u-form-code i{
+	background: url(../img/img.png)  -64px 0;
+	width:16px;
+	height:19px;
+}
+.u-form-code input{
+	width:60%;
+}
+#btnSendCode{
+	font-size:12px;
+	margin-right:10px;
+	cursor: pointer;
+	line-height: 42px;
+}
+.u-form-user i{
+	background: url(../img/img.png)  -138px 0;
+	width:18px;
+	height:18px;
+}
+.u-form-psw i{
+	background: url(../img/img.png)  -64px 0;
+	width:16px;
+	height:19px;
+}
+.u-img-left{
+	width:84%;
+	height:42px;
+	border-right:1px solid #C0C0C0;
+	float:left;
+	box-sizing: border-box;
+}
+.u-img-left input{
+	margin-left:22px;
+	width:50%;
+	height:40px;
+	float:left;
+}
+.u-img-left img{
+	width:65px;
+	height:32px;
+	float: right;
+	display: inline-block;
+	margin:3px 0 0 0;
+}
+.u-img-right{
+	width:43px;
+	height:100%;
+	background: #eaeaea;
+	float:left;
+}
+.u-img-right em{
+	background: url(../img/img.png) -30px 0;
+	width:18px;
+	height:18px;
+	display: inline-block;
+	margin:14px 0 0 14px;
+}
+.u-form-choice{
+	margin-top:14px;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.u-choice-left{
+	float:left;
+	overflow: hidden;
+}
+.u-choice-left i{
+	width:16px;
+	height:16px;
+	border:1px solid #bebebe;
+	margin-right:7px;
+	display: inline-block;
+	float:left;
+}
+.u-choice-left span{
+	color:#616161;
+	font-size:12px;
+	float:left;
+}
+.u-form-choice a{
+	color:#ff5c00;
+	font-size:12px;
+	float:right;
+	overflow: hidden;
+	display: block;
+}
+.u-button{
+	width:272px;
+	height:44px;
+	border-radius: 5px;
+	margin-top:20px;
+	color:#fff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 44px;
+}
+/*忘记密码*/
+.u-middle-forget{
+	width:1000px;
+	height:488px;
+	margin:10px auto;
+	align-items: center;
+	background: #fff;
+}
+.u-middle-fill{
+	margin:0 auto;
+	width:360px;
+	height:auto;
+	overflow: hidden;
+}
+.u-middle-fill h1{
+	color:#333;
+	font-size:20px;
+	text-align: center;
+	margin-left:100px;
+	margin-top:40px;
+}
+.u-form-forget{
+	width:100%;
+	height:42px;
+	overflow: hidden;
+	margin-top:10px;
+}
+.u-form-forget laber{
+	color:#333;
+	font-size:14px;
+	text-align: right;
+	width:88px;
+	float: left;
+	line-height: 42px;
+}
+.u-form-forget .u-form-input{
+	width:272px;
+	height:40px;
+	margin-top:0;
+	padding: 0 20px;
+	float: left;
+}
+.u-form-num input{
+	width:67%;
+}
+.u-forget-button{
+	width:272px;
+	margin-left:88px;
+}
