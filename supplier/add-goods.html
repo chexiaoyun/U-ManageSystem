@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>供应商-添加新商品</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/purchaser.css" />
+		<link rel="stylesheet" href="../css/supplier.css" />
+	</head>
+	<body>
+		<div id="u-header">
+			<div class="u-header-wrap">
+				<h1 class="u-font">U智采购管理系统</h1>
+				<i>|</i>
+				<span>供应商</span>
+				<strong>你好，管理员！退出</strong>
+			</div>
+		</div>
+		<div id="u-middle">
+			<div class="u-enterInfo u-fundbg u-supplier-wrap">
+				<div class="u-fundwrap">
+					<div class="u-fundhead">
+						<h1>添加新商品</h1>
+						<a href="javascript:;" onclick="goBack()">返回上一页</a>
+					</div>
+					<div class="u-matter">
+						<form action="">
+							<ul>
+								<li>
+									<span>分类：</span>
+									<select name="" id="" class="u-radius">
+										<option value="">一级分类</option>
+									</select>
+									<select name="" id="" class='u-radius'>
+										<option value="">二级分类</option>
+									</select>
+									<select name="" id="" class="u-radius">
+										<option value="">三级分类</option>
+									</select>
+								</li>
+								<li>
+									<span>商品名称：</span>
+									<div class="u-matter-input u-radius"><input type="text" value="" /></div>
+								</li>
+								<li>
+									<span>商品品牌：</span>
+									<div class="u-matter-input u-radius"><input type="text" value="" /></div>
+								</li>
+								<li>
+									<div class="u-matter-series">
+										<span>商品系列：</span>
+										<div class="u-matter-input u-radius"><input type="text" value="" /></div>
+										<a href="javascript:;" class="u-font u-edit">编辑</a>
+									</div>
+									<div class="u-todolist">
+										<div class="u-todolist-wrap">
+											<ul class="u-todoul">
+												<li class="u-todoli">
+													<i>SUN-2017系列01</i>
+													<div class="u-todo-choice">
+														<span class="u-font u-tode-edit">编辑</span>
+														<span>|</span>
+														<span class='u-font u-todo-remove'>删除</span>
+													</div>
+												</li>
+												<li class="u-todoli">
+													<i>SUN-2017系列02</i>
+													<div class="u-todo-choice">
+														<span class="u-font u-tode-edit">编辑</span>
+														<span>|</span>
+														<span class='u-font u-todo-remove'>删除</span>
+													</div>
+												</li>
+												<li class="u-todoli">
+													<i>SUN-2017系列03</i>
+													<div class="u-todo-choice">
+														<span class="u-font u-tode-edit" onclick="edit()">编辑</span>
+														<span>|</span>
+														<span class="u-font u-todo-remove" onclick="remove()">删除</span>
+													</div>
+												</li>
+											</ul>
+											<div class="u-supplier-add">
+												<div class="add-input u-radius">
+													<input type="text" value="" placeholder="添加新系列" />
+												</div>
+												<span class="u-radius u-bgcolor">确定</span>
+												<span class="u-radius u-add-cancel">取消</span>
+											</div>
+											<div class="u-add-keep">
+												<strong class="u-bgcolor u-radius">保存</strong>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>商品代码：</span>
+									<div class="u-matter-input u-radius"><input type="text" /></div>
+								</li>
+								<li>
+									<span>交期（天）：</span>
+									<div class="u-matter-date">
+										<div class="u-matter-within">
+											<span>境内：</span>
+											<div class="u-within-input u-radius"><input type="text" /></div>
+										</div>
+										<div class="u-matter-abroad">
+											<span>境外：</span>
+											<div class="u-abroad-input u-radius"><input type="text" /></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>价格：</span>
+									<div class="u-matter-date">
+										<div class="u-matter-within">
+											<span>境内（RMB）：</span>
+											<div class="u-within-input u-radius"><input type="text" value="" /></div>
+											<select name="" id="" class="u-radius">
+												<option value="">个</option>
+												<option value="">台</option>
+											</select>
+										</div>
+										<div class="u-matter-abroad">
+											<span>境外（美元）：</span>
+											<div class="u-abroad-input u-radius"><input type="text" value="" /></div>
+											<select name="" id="" class="u-radius">
+												<option value="">个</option>
+												<option value="">台</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>库存：</span>
+									<div class="u-matter-date">
+										<div class="u-matter-price u-radius"><input type="text" value="" /></div>
+										<select name="" id="" class="u-radius">
+											<option value="">个</option>
+											<option value="">台</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<span>商品图片：</span>
+									<div class="u-infobox">
+										<span id="btn">点击上传</span>
+										<input type="file" id="fileElem" multiple accept="image/*" name="myImage" onchange="handleFiles()" style="display:none;">
+									</div>
+								</li>
+								<li id="u-album" class="u-indent"></li>
+								<li>
+									<span>商品详细说明：</span>
+									<textarea name="" rows="" cols="" class="u-textarea u-radius u-width"></textarea>
+								</li>
+								<li>
+									<span>商品规格和资质文件：</span>
+									<div class="u-infobox" style="margin-left:5px;">
+										<span id="u-btn">点击上传</span>
+										<input type="file" id="fileElem" multiple accept="image/*" name="myImage" onchange="handle()" style="display:none;">
+									</div>
+								</li>
+								<li id="u-album" class="u-indent u-album-img"></li>
+							</ul>
+							<div class="u-public-btn">
+								<span class="u-bgcolor u-radius" style='margin-left:380px;'>确认提交</span>
+								<span class="u-orgin u-radius">修改参数</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="u-footer">
+			上海翰而精投资管理有限公司 © 版权所有 沪ICP备12008717号
+		</div>
+		
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+			//返回上一页
+			function goBack(){
+				window.history.back();
+			};
+			//上传商品图片
+			$('#btn').click(function(){
+				$(this).next('input').click();
+			});
+			function handleFiles(){
+				var div = $('<div class="img-wrap"></div>');
+				var img = $('<img class="img" src="" />');
+				img.attr('src','../img/dimg1.png');
+				var span = $('<span class="u-bgcolor">删除</span>')
+				$('#u-album').append(div);
+				div.append(span);
+				div.append(img);
+			};
+			//商品规格和资质文件
+			$('#u-btn').click(function(){
+				$(this).next('input').click();
+			});
+			function handle(){
+				var div = $('<div class="img-wrap"></div>');
+				var img = $('<img class="img" src="" />');
+				img.attr('src','../img/dimg1.png');
+				var span = $('<span class="u-bgcolor">删除</span>')
+				$('.u-album-img').append(div);
+				div.append(span);
+				div.append(img);
+			};
+			//todolist
+			function edit(){
+				var val = $(this).text();
+				console.log(val)
+				$(this).parents('li').find('.u-matter-input input').val(val);
+			};
+//			$('.u-todolist-wrap ul li i').click(function(){
+//				var val = $(this).text();
+//				console.log(val)
+//				$(this).parents('li').find('.u-matter-input input').val(val);
+//			});
+			//todo-编辑
+//			$('.u-todo-choice .u-todo-edit').click(function(){
+//				$(this).parents('li').find('i')
+//			});
+			//todo-删除
+			$('.u-todo-choice .u-todo-remove').click(function(){
+				if(confirm("是否删除该商品系列？")){
+					$(this).parents('li.u-todoli').remove();
+				}
+			});
+			//点击确认添加
+			if(localStorage.tasks!=""){
+				$('.u-todoul').innerHTML=localStorage.tasks;  
+			}
+			$('.u-supplier-add .u-bgcolor').click(function(){
+				var val = $('.add-input input').val();
+				var li = $('<li class="u-todoli"></li>');
+				$('.u-todoul').append(li);
+				var i = $('<i></i>');
+				var div = $('<div class="u-todo-choice"><span class="u-font u-tode-edit" onclick="edit()">编辑</span><span>|</span><span class="u-font u-todo-remove" onclick="remove()">删除</span></div>');
+				li.append(i);
+				li.append(div);
+				i.text(val);
+				$('.add-input input').val('');
+//				if (window.localStorage) {  
+//			        localStorage.setItem("tasks",$('.u-todoul').innerHTML);  
+//			        }else{  
+//		            Cookie.write("tasks", $('.u-todoul').innerHTML);     
+//		        } 
+			});
+			//点击取消
+			$('.u-supplier-add .u-add-cancel').click(function(){
+				$('.add-input input').val('');
+			});
+			//新增商品系列
+			$('.u-edit').click(function(){
+				$('.u-matter-series').parent('li').append('<div class="u-matter-input u-radius u-block"><input type="text" value="" /></div><i>删除</i>');
+			});
+		</script>
+	</body>
+</html>

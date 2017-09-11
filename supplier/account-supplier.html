@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>供应商-账户信息</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/purchaser.css" />
+	</head>
+	<body>
+		<div id="u-header">
+			<div class="u-header-wrap">
+				<h1 class="u-font">U智采购管理系统</h1>
+				<i>|</i>
+				<span>采购商</span>
+				<strong>你好，管理员！退出</strong>
+			</div>
+		</div>
+		<div id="u-middle">
+			<div class="u-enterInfo u-supplier-wrap">
+				<div class="u-enterInfo-left">
+					<div class="u-left-wrap">
+						<dl>
+							<dt class="u-account"><i></i><span>账户信息</span></dt>
+							<dd class="u-first"><a href="enterprise-supplier.html">企业信息</a></dd>
+							<dd><a href="javascript:;" class="u-active">用户信息</a></dd>
+						</dl>
+						<dl>
+							<dt class="u-shop"><i></i><span>采购中心</span></dt>
+							<dd  class="u-first"><a href="goods-supplier.html">采购商品</a></dd>
+							<dd><a href="orders-supplier.html">采购订单</a></dd>
+						</dl>
+						<dl>
+							<dt class="u-money"><i></i><span>资金管理</span></dt>
+							<dd><a href="sup-fund.html">资金管理</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="u-enterInfo-right">
+					<div class="u-right-wrap">
+						<h1>账户信息</h1>
+						<ul class="u-right-modle u-right-sup">
+							<li class="u-enter">
+								<a href="enterprise-supplier.html">
+									<i></i>
+									<div class="u-modle-first">
+										<h2>企业信息</h2>
+										<span>请完善企业基本信息</span>
+									</div>
+								</a>
+							</li>
+							<li class="u-active u-user">
+								<a href="javascript:;">
+									<i></i>
+									<div class="u-modle-first">
+										<h2>用户信息</h2>
+										<span>填写个人信息情况</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<form action="">
+							<div class="u-common u-basicInfo ">
+								<h2>账户操作人信息</h2>
+								<ul class="u-infolist">
+									<li>
+										<span>账户：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>密码：</span>
+										<a href="../login/forget.html" class="u-font">点击修改密码</a>
+									</li>
+									<li>
+										<span>姓名：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>登录手机号码：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>电话：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>手机：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>QQ：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>Email：</span>
+										<div class="u-infoinput">
+											<input type="text" value="" />
+										</div>
+									</li>
+									<li>
+										<span>上传企业委托书：</span>
+										<div class="u-infobox">
+											<span id="btn">点击上传</span>
+											<input type="file" id="fileElem" multiple accept="image/*" name="myImage" onchange="handleFiles()" style="display:none;">
+										</div>
+										<a href="javascript:;" class="u-font u-template">点击下载模板</a>
+									</li>
+									<li id="u-album"></li>
+								</ul>
+							</div>
+							<div class="u-finish">
+								<input type="submit" value="确认" class='u-sure' />
+								<input type="submit" value="修改" class='u-modify' />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="u-footer">
+			上海翰而精投资管理有限公司 © 版权所有 沪ICP备12008717号
+		</div>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+			//上传图片
+			$('#btn').click(function(){
+				$(this).next('input').click();
+			});
+			function handleFiles(){
+				//var oMyForm = new FormData();
+        		//oMyForm.append("image", $("#fileElem").get(0).files[0]);
+				var div = $('<div class="img-wrap"></div>');
+				var img = $('<img class="img" src="" />');
+				img.attr('src','../img/dimg1.png');
+				var span = $('<span class="u-bgcolor" onclick="remove()">删除</span>')
+				$('#u-album').append(div);
+				div.append(span);
+				div.append(img);
+			};
+		</script>
+	</body>
+</html>

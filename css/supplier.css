@@ -1,0 +1,126 @@
+.u-supplier-title li{
+	width: 9%;
+}
+.u-supplier-ul ul li{
+	width: 9%;
+}
+.u-supplier-ul ul li.u-rad{
+	color:#e96e5c;
+}
+.u-supplier-ul ul li.u-font{
+	color:#0183E1;
+}
+.u-supplier-ul ul li a.u-top{
+	margin-top:5px;
+}
+.u-edit{
+	float:left;
+	margin-left:20px;
+	font-size:12px;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.u-todolist{
+	border:1px solid #dcdcdc;
+	height:auto;
+	width: 450px;
+	overflow: hidden;
+	margin:20px 0 20px 85px;
+	box-shadow: 3px 5px 4px rgba(0,0,0,.1);
+	-webkit-box-shadow: 3px 5px 4px rgba(0,0,0,.1);
+	-moz-box-shadow: 3px 5px 4px rgba(0,0,0,.1);
+}
+.u-matter-series{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.u-todolist-wrap{
+	padding:10px 20px;
+	height:auto;
+	overflow: hidden;
+}
+.u-todolist-wrap ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.u-todo-choice{
+	float:right;
+}
+.u-matter li  .u-todo-choice span{
+	float:left;
+	color:#0183E1;
+	padding:0 5px;
+	cursor: pointer;
+}
+.u-matter .u-todolist-wrap  span{
+	width:auto;
+}
+.u-matter .u-todolist-wrap li{
+	margin-top:0;
+	cursor: pointer;
+	position:relative;
+}
+.u-matter .u-todolist-wrap li i{
+    float: left;
+    color: #000;
+    font-size: 14px;
+    line-height: 40px
+}
+.u-matter .u-todolist-wrap li:hover i{
+	color:#0183E1;
+}
+.u-supplier-add{
+	border-bottom:1px solid #dcdcdc;
+	padding:20px 0;
+	height:auto;
+	width: 100%;
+	overflow: hidden;
+}
+.u-supplier-add .add-input{
+	float:left;
+	width: 248px;
+	height: 28px;
+	border:1px solid #0183E1;
+}
+.u-supplier-add .add-input input{
+	padding:0 5px;
+	height:28px;
+	width: 90%;
+}
+.u-matter .u-todolist-wrap .u-supplier-add span{
+	float:left;
+	margin-left:16px;
+	width: 60px;
+	height: 30px;
+	font-size:12px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	border:1px solid #0183e1;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	cursor: pointer;
+}
+.u-matter .u-todolist-wrap .u-supplier-add span.u-bgcolor{
+	color:#fff;
+}
+.u-matter .u-todolist-wrap .u-supplier-add span.u-add-cancel:hover{
+	background: #0183E1;
+	color:#fff;
+}
+.u-add-keep{
+	text-align: center;
+	cursor: pointer;
+}
+.u-todolist-wrap strong{
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	color:#fff;
+	line-height: 30px;
+	display: inline-block;
+	margin-top:20px;
+}

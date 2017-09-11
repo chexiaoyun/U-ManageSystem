@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>采购商-添加新物料</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/purchaser.css" />
+	</head>
+	<body>
+		<div id="u-header">
+			<div class="u-header-wrap">
+				<h1 class="u-font">U智采购管理系统</h1>
+				<i>|</i>
+				<span>采购商</span>
+				<strong>你好，管理员！退出</strong>
+			</div>
+		</div>
+		<div id="u-middle">
+			<div class="u-tip">
+				<i></i>
+				<ul>
+					<li><span>沪铅现价：</span><span>19555</span><strong>+1.65%</strong></li>
+					<li><span>沪铅现货09：</span><span>19010</span><strong>1.03%</strong></li>
+					<li><span>沪铅现货09：</span><span>19010</span><strong>1.03%</strong></li>
+				</ul>
+			</div>
+			<div class="u-enterInfo u-fundbg">
+				<div class="u-fundwrap">
+					<div class="u-fundhead">
+						<h1>添加新物料</h1>
+						<a href="javascript:;" onclick="goBack()">返回上一页</a>
+					</div>
+					<div class="u-matter">
+						<h2>物料要求</h2>
+						<form action="">
+							<ul>
+								<li>
+									<span>分类：</span>
+									<select name="" id="" class="u-radius">
+										<option value="">一级分类</option>
+									</select>
+									<select name="" id="" class='u-radius'>
+										<option value="">二级分类</option>
+									</select>
+									<select name="" id="" class="u-radius">
+										<option value="">三级分类</option>
+									</select>
+								</li>
+								<li>
+									<span>物料名称：</span>
+									<div class="u-matter-input u-radius"><input type="text" /></div>
+								</li>
+								<li>
+									<span>物料品牌：</span>
+									<div class="u-matter-input u-radius"><input type="text" /></div>
+								</li>
+								<li>
+									<span>物料规格：</span>
+									<div class="u-matter-input u-radius"><input type="text" /></div>
+								</li>
+								<li>
+									<span>物料代码：</span>
+									<div class="u-matter-input u-radius"><input type="text" /></div>
+								</li>
+								<li>
+									<span>交期（天）：</span>
+									<div class="u-matter-date">
+										<div class="u-matter-within">
+											<span>境内：</span>
+											<div class="u-within-input u-radius"><input type="text" /></div>
+										</div>
+										<div class="u-matter-abroad">
+											<span>境外：</span>
+											<div class="u-abroad-input u-radius"><input type="text" /></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span>单价要求：</span>
+									<div class="u-matter-date">
+										<div class="u-matter-price u-radius"><input type="text" /></div>
+										<select name="" id="" class="u-radius">
+											<option value="">个</option>
+											<option value="">台</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<div class="u-public-btn">
+								<span class="u-bgcolor u-radius">确认提交</span>
+								<span class="u-orgin u-radius">修改要求</span>
+							</div>
+						</form>
+					</div>
+					<div class="u-supplier">
+						<h2>供应商信息</h2>
+						<div class="u-supplier-list">
+							<ul class="u-supplier-head">
+								<li>供应商名称</li>
+								<li>供应商等级</li>
+								<li>交期（天）</li>
+								<li>状态</li>
+								<li>操作</li>
+							</ul>
+							<div class="u-supplier-bottom">
+								<ul>
+									<li>深圳xxxxx电子有限公司</li>
+									<li class="u-font">优选</li>
+									<li>30</li>
+									<li>已选</li>
+									<li class="u-cancel">取消供应商资格</li>
+								</ul>
+								<ul>
+									<li>深圳xxxxx电子有限公司</li>
+									<li>推荐</li>
+									<li>30</li>
+									<li>未选</li>
+									<li>添加供应商资格</li>
+								</ul>
+								<ul>
+									<li>深圳xxxxx电子有限公司</li>
+									<li>推荐</li>
+									<li>30</li>
+									<li>未选</li>
+									<li>添加供应商资格</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="u-footer">
+			上海翰而精投资管理有限公司 © 版权所有 沪ICP备12008717号
+		</div>
+		
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+			//上传图片
+			$('#btn').click(function(){
+				$(this).next('input').click();
+			});
+			function handleFiles(){
+				var div = $('<div class="img-wrap"></div>');
+				var img = $('<img class="img" src="" />');
+				img.attr('src','../img/dimg1.png');
+				var span = $('<span class="u-bgcolor">删除</span>')
+				$('#u-album').append(div);
+				div.append(span);
+				div.append(img);
+			};
+			//返回上一页
+			function goBack(){
+				window.history.back();
+			};
+			
+			$('.u-supplier-bottom ul li:last-child').click(function(){
+				if($(this).is('.u-cancel')){
+					$(this).removeClass("u-cancel");
+					$(this).text('添加供应商资格');
+				}else{
+					$(this).addClass("u-cancel");
+					$(this).text('取消供应商资格');
+				}
+			});
+		</script>
+	</body>
+</html>

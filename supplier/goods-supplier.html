@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>供应商-商品管理</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/purchaser.css" />
+		<link rel="stylesheet" href="../css/supplier.css" />
+	</head>
+	<body>
+		<div id="u-header">
+			<div class="u-header-wrap">
+				<h1 class="u-font">U智采购管理系统</h1>
+				<i>|</i>
+				<span>供应商</span>
+				<strong>你好，管理员！退出</strong>
+			</div>
+		</div>
+		<div id="u-middle">
+			<div class="u-enterInfo u-fundbg u-supplier-wrap">
+				<div class="u-fundwrap">
+					<div class="u-fundhead">
+						<h1>销售中心</h1>
+						<a href="enterprise-supplier.html">返回首页</a>
+					</div>
+					<div class="u-goods">
+						<div class="u-goods-head">
+							<a href="javascript:;" class="u-active">供应商品管理</a>
+							<a href="orders-supplier.html">供应订单管理</a>
+						</div>
+						<div class="u-goods-wrap">
+							<div class="u-classify">
+								<div class="u-search">
+									<div class="u-search-input"><input type="text" placeholder="请输入关键字" /></div>
+									<span>搜索</span>
+								</div>
+								<div class="u-screen">
+									<div class="u-screen-left">
+										<span>筛选：</span>
+										<div class="u-screen-select">
+											<select name="" id="" class="u-radius">
+												<option value="">一级分类</option>
+												<option value="">一级分类</option>
+											</select>
+											<select name="" id="" class="u-radius">
+												<option value="">二级分类</option>
+												<option value="">二级分类</option>
+											</select>
+											<select name="" id="" class="u-radius">
+												<option value="">三级分类</option>
+												<option value="">三级分类</option>
+											</select>
+										</div>
+									</div>
+									<a	href="add-goods.html" class="u-screen-right u-radius">+添加新商品</a>
+								</div>
+							</div>
+							<div class="u-goods-list">
+								<ul class="u-goods-title u-supplier-title">
+									<li>商品名称</li>
+									<li>类别</li>
+									<li>品牌</li>
+									<li>系列</li>
+									<li>单价（元）</li>
+									<li>单位</li>
+									<li>交期（天）</li>
+									<li>库存</li>
+									<li>销量</li>
+									<li>状态</li>
+									<li>操作</li>
+								</ul>
+								<div class="u-goods-ul u-supplier-ul">
+									<ul>
+										<li>电解电容</li>
+										<li>
+											<span>一级分类</span>
+											<span>二级分类</span>
+											<span>三级分类</span>
+										</li>
+										<li>厚生</li>
+										<li>PCB WDA/110-CU </li>
+										<li class="u-num">0.5</li>
+										<li>个</li>
+										<li>35</li>
+										<li>0</li>
+										<li>5000</li>
+										<li class="u-rad">缺货</li>
+										<li class="u-goods-upload">
+											<a href="javascript:;" class="u-bgcolor u-radius">恢复销售</a>
+											<a href="javascript:;" class="u-orgin u-radius u-top">删除</a>
+										</li>
+									</ul>
+									<ul>
+										<li>电解电容</li>
+										<li>
+											<span>一级分类</span>
+											<span>二级分类</span>
+											<span>三级分类</span>
+										</li>
+										<li>厚生</li>
+										<li>PCB WDA/110-CU </li>
+										<li class="u-num">0.5</li>
+										<li>个</li>
+										<li>35</li>
+										<li>500</li>
+										<li>5000</li>
+										<li class="u-font">销售中</li>
+										<li class="u-goods-upload">
+											<a href="javascript:;" class="u-yellow u-radius">缺货</a>
+											<a href="javascript:;" class="u-orgin u-radius u-top">删除</a>
+										</li>
+									</ul>
+								</div>
+								<div class="u-goods-page">
+									<ul>
+										<li>首页</li>
+										<li>上一页</li>
+										<li class="u-active">1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>...</li>
+										<li>下一页</li>
+										<li>尾页</li>
+									</ul>
+									<span>共有 122 条记录，当前第 <i>1</i>/9 页</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="u-footer">
+			上海翰而精投资管理有限公司 © 版权所有 沪ICP备12008717号
+		</div>
+		
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script>
+			//删除按钮
+			$('.u-goods-upload .u-orgin').click(function(){
+				if(confirm("确认删除此商品吗？")){
+					$(this).parents('ul').remove();
+				}
+			});
+		</script>
+	</body>
+</html>

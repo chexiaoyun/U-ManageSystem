@@ -108,7 +108,7 @@
 	height:19px;
 }
 .u-img-left{
-	width:84%;
+	width:100%;
 	height:42px;
 	border-right:1px solid #C0C0C0;
 	float:left;
@@ -126,19 +126,6 @@
 	float: right;
 	display: inline-block;
 	margin:3px 0 0 0;
-}
-.u-img-right{
-	width:43px;
-	height:100%;
-	background: #eaeaea;
-	float:left;
-}
-.u-img-right em{
-	background: url(../img/img.png) -30px 0;
-	width:18px;
-	height:18px;
-	display: inline-block;
-	margin:14px 0 0 14px;
 }
 .u-form-choice{
 	margin-top:14px;
@@ -162,6 +149,21 @@
 	color:#616161;
 	font-size:12px;
 	float:left;
+}
+.u-choice-left span.u-span{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	border:1px solid #c0c0c0;
+	margin-right:10px;
+	cursor: pointer;
+}
+.u-choice-left span img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top:0;
+	left:0;
 }
 .u-form-choice a{
 	color:#ff5c00;
@@ -228,4 +230,88 @@
 .u-forget-button{
 	width:272px;
 	margin-left:88px;
+}
+.u-agree{
+	width:100%;
+	height:40px;
+}
+.u-agree span{
+	float:left;
+	width: 20px;
+	height: 20px;
+	border:1px solid #999;
+	position:relative;
+	cursor: pointer;
+	margin:20px 10px 0 88px;
+}
+.u-agree span img{
+	width: 20px;
+	height: 20px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.u-agree p{
+	float:left;
+	color:#666;
+	font-size:14px;
+	margin-top:23px;
+}
+.u-agree a{
+	text-decoration: underline;
+}
+/*平台协议*/
+.u-agreement{
+	width: 962px;
+	height: 602px;
+	background: #fff;
+	margin:50px auto;
+}
+.u-agreement-head{
+	width: 100%;
+	height: 40px;
+	background: #f3f3f3;
+}
+.u-agreement-head h1{
+	color:#000;
+	font-size:12px;
+	line-height: 40px;
+	margin-left:20px;
+	float:left;
+}
+.u-agreement-head i{
+	background: url(../img/img.png) -135px -75px;
+	width: 15px;
+	height: 16px;
+	margin: 12px 10px 0 0;
+	float:right;
+	cursor: pointer;
+}
+.u-agreement-body{
+	padding:0 10px 0 20px;
+	margin:22px 0;
+	height:447px;
+	width: 923px;
+	overflow-y: auto;
+}
+.u-agreement-body p{
+	color:#000;
+	font-size: 12px;
+	line-height: 30px;
+}
+.u-read{
+	width: 100%;
+	height:auto;
+	overflow: hidden;
+	text-align: center;
+}
+.u-read span{
+	width: 160px;
+	height: 44px;
+	color:#fff;
+	font-size:18px;
+	text-align: center;
+	line-height:44px;
+	display: inline-block;
+	cursor: pointer;
 }
